@@ -1,24 +1,20 @@
 document.querySelector(".form-control").focus();
 let btn = document.getElementById("botao");
+let b = document.getElementById("campo");
+let alert = document.getElementById("first-element");
+b.onkeyup = function(){
+    if(b.value.length !== 0){
+        alert.innerHTML='';
+        alert.style.display='none';
+    }
+}
 btn.onclick = function(){
     if(document.querySelector("#campo").value ===''){
-        var validation = document.createElement("div");
-        validation.setAttribute('class', 'alert alert-warning');
-        validation.setAttribute('id', 'first-element');
-        let msg = document.createTextNode("É necessário preencher uma tarefa antes");
-        validation.appendChild(msg);
-        let reference = document.querySelector("#lista");
-        reference.parentNode.insertBefore(validation, reference);
-        msg = '';
-        let numberOfClasses = document.getElementsByClassName("alert alert-warning");
-        if(numberOfClasses.length > 1){
-            validation.remove();
-        }
+        alert.style.display='block';
+        alert.setAttribute("class", "alert alert-warning");
+        alert.innerHTML='É necessário preencher uma tarefa antes';
     }
     else if(document.querySelector("#campo").value !==''){
-        if(document.querySelector("#first-element")){
-            document.getElementById("first-element").remove();
-        }
             let reference = document.querySelector("#lista");
             let newElement = document.createElement("li");
             let valorAtual = document.querySelector("#campo").value;
@@ -52,6 +48,8 @@ btn.onclick = function(){
             
         }
     }
+
+    
 
 
 
