@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Museu Nacional</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="normalize.css" type="text/css">
+        <link rel="stylesheet" href="index.css" type="text/css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    </head>
+    <body>
+        <div>
+            <div id="header">
+                <header>
+                    <nav>
+                        <ul>
+                            <li><a href="#">Contato</a></li>
+                            <li><a href="#">Fotos</a></li>
+                            <li><a href="#">Vídeos</a></li>
+                            <li><a href="#">Acervo</a></li>
+                            <li><a href="#">Pesquisa</a></li>
+                            <li><a href="#">Exposições</a></li>
+                            <li><a href="index.html">Home</a></li>
+                        </ul>
+                        <div>
+                            <img src="./img/logo.png" id="logo">
+                        </div>
+                    </nav>
+                </header>
+            <div id="principal">
+                    <div id="conteudo"><!--Conteúdo Principal-->
+                        <section>
+                            <img src="./img/museu.png">
+                        </section>
+                        <section id="informacoes">
+                            <article id="video">
+                                <h4>Conheça mais sobre o Museu Nacional</h4>
+                                <iframe width="310" height="170" src="https://www.youtube.com/embed/RGUYb-hivrc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </article>      
+                            <article id="map">
+                                <h4>Localize o Museu Nacional</h4>
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.206311665319!2d-43.228717585034445!3d-22.90575998501238!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997e58a085b7af%3A0x4d11e9a933d38ce3!2sMuseu%20Nacional%20-%20UFRJ!5e0!3m2!1spt-BR!2sbr!4v1596391288824!5m2!1spt-BR!2sbr" width="310" height="170" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                            </article>
+                            <article id="artigos">
+                                <h4>Exposições</h4>   
+                                <ul id="link-artigo">
+                                    <li><a href="#">Os assustadores insetos</a></li>
+                                    <li><a href="#">O crânio de Luzia, a mulher mais antiga do Brasil</a></li>
+                                    <li><a href="#">Preguiça gigante e tigre-dentes-de-sabre</a></li>
+                                    <li><a href="#">Plantas do Brasil Central</a></li>
+                                    <li><a href="#">Terezina Cristina: A imperatriz Arqueóloga</a></li>
+                                    <li><a href="#">Arte com dinossauros - Paleoarte</a></li>
+                                </ul>
+                            </article>
+                            <article id="informacao">
+                                <h4>Sobre o Museu Nacional</h4>
+                                <p>O Museu Nacional, vinculado à Universidade Federal do Rio de Janeiro, é a mais antiga instituição científica do Brasil que, até setembro de 2018, figurou como um dos maiores museus de história natural e de antropologia das Américas</p>
+                                <a href="#">Leia Mais</a>
+                            </article>
+                        </section>
+                    </div>
+                     <!--Barra lateral-->
+                    <aside>
+                        <section>
+                            <img src="./img/depoimento.png">
+                        </section>
+                        <section>
+                            <div id="login">
+                                <h3 id="title">Agende sua visita</h3>
+                                <form>
+                                    <fieldset>
+                                        <label for="data">Selecione uma data</label>
+                                        <input type="date" id="data">
+
+                                        <label for="qtd">Quantidade de pessoas</label>
+                                        <input type="text" id="qtd" placeholder="Digite o número de visitantes">
+                                    </fieldset>
+                                    <button type="button" class="btn btn-primary" id="btn">Verifique disponibilidade</button>
+                                </form>
+                            </div>
+                            <div id="msg">
+
+                            </div>
+                        </section>
+                        <section id="galeria">
+                            <h3 id="title-galeria">Galeria de fotos</h3>
+                            <div>
+                                <a href="#" class="imagens">
+                                    <img src="./img/imagem1.jpg">
+                                </a>
+                                <a href="#" class="imagens">
+                                    <img src="./img/imagem2.jpg">
+                                </a>
+                            </div>
+                            <div>
+                                <a href="#" class="imagens">
+                                    <img src="./img/imagem3.jpg">
+                                </a>
+                                <a href="#" class="imagens">
+                                    <img src="./img/imagem4.jpg">
+                                </a>
+                            </div>
+                        </section>
+                    </aside>  
+                </div>
+            </div>  
+        </div>
+        <div id="rodape">
+            <footer>
+                <img src="./img/fundo-rodape.png">
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="#">Exposições</a></li>
+                    <li><a href="#">Pesquisa</a></li>
+                    <li><a href="#">Acervo</a></li>
+                    <li><a href="#">Vídeos</a></li>
+                    <li><a href="#">Fotos</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+                <p>&copy;2020 Museu Nacional - Todos os direitos reservados.</p>
+            </footer>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>

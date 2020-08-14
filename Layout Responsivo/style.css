@@ -1,0 +1,240 @@
+/*Cabeçalho*/
+header{
+    background-color: rgb(255, 172, 158);
+}
+header h2{
+    font-size: 16px;
+}
+header h1{
+    font-size: 18px;
+}
+p{
+    font-size: 14px;
+}
+
+/*Barra lateral esquerda*/
+div #lateral-esquerda{
+    box-shadow: 4px .1px 10px 1px rgb(150, 149, 149);
+    position: fixed;
+}
+div #lateral-esquerda #navegacao{
+    padding-bottom: 100%;
+}
+div aside #first-section{
+    padding: 2.38rem 0;
+}
+aside #navegacao nav ul li:hover{
+    border-left: 5px solid orange;
+    background-color: rgb(255, 172, 158);
+}
+.pagina-atual{
+    border-left: 5px solid orange;
+    background-color: rgb(255, 172, 158);
+}
+#lateral-direita section #titulo{
+    background-color: rgb(255, 172, 158);
+}
+
+/*main*/
+main h1{
+    font-size: 18px;
+}
+main section .titulo{
+    background-color: rgb(255, 172, 158);
+    overflow: hidden;
+} 
+main section div button{
+    position: relative;
+    bottom: 37px;
+}
+main section .question{
+    box-shadow: 4px .1px 10px 1px rgb(150, 149, 149);
+}
+main #lateral-direita section h1{
+    font-size: 28px;
+}
+main #lateral-direita section .custom{
+    font-size: 12px;
+}
+main section #ver-mais{
+    cursor: pointer;
+}
+
+/*footer*/
+div footer #saiba-mais{
+    background-color: purple;
+}
+div footer p{
+    font-size: 15px;
+}
+
+/*Tags criadas com JavaScript*/
+textarea{
+    resize: none;
+}
+#campo-auxiliar{
+    height: 40px;
+}
+#enviar-comentário{
+    margin-top: 40px;
+}
+#cancelar-comentário{
+    margin-bottom: 33px;
+}
+#comentarios{
+    cursor: pointer;
+}
+
+/*Efeitos adicionais*/
+@keyframes bounce {
+    0%, 20%, 60%, 100%{
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+    40%{
+        -webkit-transform: translateY(-20px);
+        transform: translateY(-20px);
+    }
+    80%{
+        -webkit-transform: translateY(-10px);
+        transform: translateY(-10px);
+    }
+}
+#up-down:hover{
+    animation: bounce 1s;
+}
+
+/*Menu hamburguer*/
+#menu-small{
+    background-color: white;
+}
+#menu-small nav ul li:hover{
+    border-left: 5px solid orange;
+    background-color: rgb(255, 172, 158);
+}
+#menu-small #title-slaca{
+    font-size: 40px;
+}
+
+/*Medias queries*/
+
+/*Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+    body{
+        overflow-x: hidden;
+    }
+    #lateral-esquerda{
+        display: none;
+    }
+    header{
+        row-gap: 12;
+    }
+    header #idioma{
+        display: none;
+    }
+    header #user{
+        display: none;
+    }
+    div footer p{
+        font-size: 15px;
+        text-align: justify;
+    }
+    div footer img{
+        display: none;
+    }
+    footer #saiba-mais{
+        padding: 15px 0;
+    }
+    #user-div{
+        display: none;
+    }
+    #lateral-direita{
+        display: none;
+    }
+    #resumo{
+        margin-top: 3rem;
+    }
+}
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) { 
+    body{
+        overflow-x: hidden;
+    }
+    #lateral-esquerda{
+        display: none;
+    }
+    header #idioma{
+        display: none;
+    }
+    header #user{
+        display: none;
+    }
+    div footer p{
+        font-size: 15px;
+        text-align: justify;
+    }
+    div footer img{
+        display: none;
+    }
+    footer #saiba-mais{
+        padding: 15px 0;
+    }
+}
+
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+    body{
+        overflow-x: hidden;
+    }
+    #lateral-esquerda{
+        display: none;
+    }
+    header #idioma{
+        display: none;
+    }
+    header #user{
+        display: none;
+    }
+    div footer p{
+        font-size: 15px;
+        text-align: justify;
+    }
+    div footer img{
+        display: none;
+    }
+    footer #saiba-mais{
+        padding: 15px 0;
+    }
+}
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    body{
+        overflow-x: hidden;
+    }
+    #lateral-esquerda{
+        display: none;
+    }
+    header{
+        padding: 1000px 0;
+    }
+    header #idioma{
+        display: none;
+    }
+    header #user{
+        display: none;
+    }
+    div footer p{
+        font-size: 15px;
+        text-align: justify;
+    }
+    div footer img{
+        display: none;
+    }
+    footer #saiba-mais{
+        padding: 15px 0;
+    }
+}
+/*Para esse caso não foi necessário usar Extra Large*/
+

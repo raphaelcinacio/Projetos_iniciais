@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bootstrap</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css" type="text/css">
+    </head>
+    <body>
+        <div class="conteiner-fluid">
+            <div> <!--Para agrupar elementos em uma mesma linha, semelhante a um row-->
+                <!--Começo do cabelhaço-->
+                <header class="float-right col-xl-10 col-lg-12 col-md-12 col-sm-12 p-0 pt-2">
+                    <section class="col-12 p-0">
+                        <h2 class="pl-2">Anais do Simpósio Latino Americano de Ciências de Alimentos</h2>
+                    </section>
+                    <section class="col-12 p-0">
+                        <h1 class="col-xl-6 col-lg-12 col-md-12 col-sm-12 d-inline-block pl-2 pb-xl-3">Anais do 13º Simpósio Latino Americano de Ciência de Alimentos</h1>
+                        <div class="dropdown col-1 d-inline">
+                            <button class="btn btn-outline-secondary dropdown-toggle text-dark" id="idioma" type="button" data-toggle="dropdown"><img src="./node_modules/bootstrap-icons/icons/globe.svg">
+                                PT,BR</button>
+                            <div class="dropdown-menu">
+                              <a href="#" class="dropdown-item text-info">PT,BR</a>
+                              <div class="dropdown-divider"></div> 
+                              <a href="#" class="dropdown-item text-info">Inglês</a> 
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-0 col-md-0 col-sm-0 d-xl-inline-block d-lg-none d-md-none d-sm-none ml-5" id="user-div">
+                            <div id="user">
+                                <p class="d-inline">Bem vindo!<span class="border border-dark rounded-circle bg-white float-right mt-2">
+                                    <img src="./node_modules/bootstrap-icons/icons/person-fill.svg"></span></p><br>
+                                <p class="d-inline">alguem12@galoascience.com</p>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="col-xl-12 col-lg-0 col-md-0 col-sm-0 p-0">
+                        <h2 class="pl-2">ISSN: 2447-2840</h2>
+                        <!--Começo da criação do menu hamburguer-->
+                        <div class="d-xl-none" id="menu-small">
+                            <button class="navbar-toggler border border-dark" data-toggle="collapse" 
+                                data-target="#menu">
+                                <span><img src="./node_modules/bootstrap-icons/icons/menu-button-wide-fill.svg"></span>
+                            </button> 
+                            <nav class="collapse navbar-collapse pb-4" id="menu">
+                                <ul class="nav nav-tabs flex-column">
+                                    <li class="nav-item border-bottom"><a class="nav-link text-dark" href="#">Apresentação</a></li>
+                                    <li class="nav-item border-bottom"><a class="nav-link text-dark" href="#">Comitês</a></li>
+                                    <li class="nav-item border-bottom"><a class="nav-link text-dark" href="#">Autores</a></li>
+                                    <li class="nav-item border-bottom"><a class="nav-link text-dark" href="#">Eixos temáticos</a></li>
+                                    <li class="nav-item border-bottom pagina-atual"><a class="nav-link text-dark" href="#">Trabalhos</a></li>
+                                    <li class="nav-item"><a class="nav-link text-dark" href="#">Contato</a></li>
+                                </ul>
+                                <div class="bg-warning col-12" id="first-section">
+                                    <h1 class="text-white text-uppercase text-center py-2" id="title-slaca">Slaca 2019</h1>
+                                </div>
+                            </nav>
+                        <!--Fim da criação do menu hamburguer-->
+                        </div>
+                    </section>
+                <!--Fim do cabeçalho-->
+                </header>
+                <!--Começo Barra lateral esquerda-->
+                <aside class="float-left col-2 p-0" id="lateral-esquerda">
+                    <section class="bg-warning col-12" id="first-section">
+                        <h1 class="text-white text-uppercase text-center">Slaca 2019</h1>
+                    </section>
+                    <section class="border">
+                        <img src="./Imagens/Logo.png" class="w-100 pt-0">
+                    </section>
+                    <section id="navegacao">
+                        <nav>
+                            <ul class="nav nav-tabs flex-column">
+                                <li class="nav-item border-bottom"><a class="nav-link text-dark" href="#">Apresentação</a></li>
+                                <li class="nav-item border-bottom"><a class="nav-link text-dark" href="#">Comitês</a></li>
+                                <li class="nav-item border-bottom"><a class="nav-link text-dark" href="#">Autores</a></li>
+                                <li class="nav-item border-bottom"><a class="nav-link text-dark" href="#">Eixos temáticos</a></li>
+                                <li class="nav-item border-bottom pagina-atual"><a class="nav-link text-dark" href="#">Trabalhos</a></li>
+                                <li class="nav-item"><a class="nav-link text-dark" href="#">Contato</a></li>
+                            </ul>
+                        </nav>
+                    </section>
+                </aside>
+                <!--Fim da Barra lateral esquerda-->
+            </div> 
+            <div>
+                <!--Começo do main-->
+                <main class="float-right col-xl-10 col-lg-12 col-md-12 col-sm-12 mb-5">
+                    <section>
+                        <aside class="float-right col-xl-4 d-xl-inline d-lg-none d-md-none d-sm-none pr-0" id="lateral-direita">
+                            <section class="col-11 pl-0">
+                                <button class="btn btn-warning text-white" type="button"><img src="./node_modules/bootstrap-icons/icons/download.svg" class="px-2">Download</button>
+                                <button class="btn btn-warning" type="button"><img src="./node_modules/bootstrap-icons/icons/star.svg" class="px-1"></button>
+                                <button class="btn btn-warning" type="button"><span class="text-monospace border border-white text-warning rounded-circle bg-white p-1 py-2 px-1">
+                                    doi</span></button>
+                                <p class="text-uppercase text-warning mt-3">Como citar esse trabalho?</p>
+                            </section>
+                            <section class="border border rounded col-9 p-0">
+                                <div class="border col-12" id="titulo">
+                                    <h1 class="m-0 py-2">Detalhes</h1>
+                                </div>
+                                <div class="ml-2 mt-2">
+                                    <p>Tipo De Apresentação: <strong>Pôster</strong></p>
+                                    <p>Eixo Temático: <strong>Alimentação E Saúde (AS)</strong></p>
+                                    <p>Palavras-Chaves: <strong>Alimentos Funcionais, Alimentação Escolar.</strong></p>
+                                    <h6><strong>Autores:</strong></h6>
+                                    <p class="mb-1 text-uppercase text-dark custom">Galileu Galilei<sup>1</sup></p>
+                                    <p class="mb-1 text-uppercase text-dark custom">Berta Lange De Morretes<sup>2</sup></p>
+                                    <p class="mb-1 text-uppercase text-dark custom">Isaac Newton<sup>3</sup></p>
+                                    <p class="mb-1 text-uppercase text-dark custom">Cesar Lattes<sup>1</sup></p>
+                                    <p class="mb-4 text-uppercase text-dark custom">Stephen Hawking<sup>4</sup></p>
+                                    <p class="mb-1 text-uppercase text-dark custom"><sup>1</sup>Universidade Estadual de Campinas</p>
+                                    <p class="mb-1 text-uppercase text-dark custom"><sup>2</sup>Universidade de São Paulo</p>
+                                    <p class="mb-1 text-uppercase text-dark custom"><sup>3</sup>Instituto Nacional de Pesquisas Espaciais</p>
+                                    <p class="mb-1 text-uppercase text-dark custom"><sup>4</sup>Universidade Federal do Rio de Janeiro</p>
+                                </div>
+                            </section>
+                        </aside>
+                        <div>
+                            <h1 class="mt-3 text-warning text-justify col-xl-7 col-lg-12 col-md-12 col-sm-12">Análise sensorial de preparações funcionais desenvolvidas para escolares entre 09 e 15 anos, 
+                                do município de Campinas/SP</h1>
+                        </div>
+                        <iframe class="mt-3 ml-xl-3 col-xl-7 col-lg-12 col-md-12 col-sm-12 border p-0" height="515" src="https://www.youtube.com/embed/cDwLrbMCMZs" frameborder="0" 
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </section>
+                    <section class="border rounded d-xl-none col-xl-11 col-lg-12 col-md-12 col-sm-12 mt-3 ml-xl-3 p-0">
+                        <div class="border col-12 titulo">
+                            <h1 class="m-0 py-2">Detalhes</h1>
+                        </div>
+                        <div class="ml-2 mt-2">
+                            <p>Tipo De Apresentação: <strong>Pôster</strong></p>
+                            <p>Eixo Temático: <strong>Alimentação E Saúde (AS)</strong></p>
+                            <p>Palavras-Chaves: <strong>Alimentos Funcionais, Alimentação Escolar.</strong></p>
+                            <h6><strong>Autores:</strong></h6>
+                            <p class="mb-1 text-uppercase text-dark custom">Galileu Galilei<sup>1</sup></p>
+                            <p class="mb-1 text-uppercase text-dark custom">Berta Lange De Morretes<sup>2</sup></p>
+                            <p class="mb-1 text-uppercase text-dark custom">Isaac Newton<sup>3</sup></p>
+                            <p class="mb-1 text-uppercase text-dark custom">Cesar Lattes<sup>1</sup></p>
+                            <p class="mb-4 text-uppercase text-dark custom">Stephen Hawking<sup>4</sup></p>
+                            <p class="mb-1 text-uppercase text-dark custom"><sup>1</sup>Universidade Estadual de Campinas</p>
+                            <p class="mb-1 text-uppercase text-dark custom"><sup>2</sup>Universidade de São Paulo</p>
+                            <p class="mb-1 text-uppercase text-dark custom"><sup>3</sup>Instituto Nacional de Pesquisas Espaciais</p>
+                            <p class="mb-1 text-uppercase text-dark custom"><sup>4</sup>Universidade Federal do Rio de Janeiro</p>
+                        </div>
+                    </section>  
+                    <section class="border rounded col-xl-11 col-lg-12 col-md-12 col-sm-12 mt-xl-3 mt-lg-5 mt-md-5 mt-sm-5 ml-xl-3 p-0" id="resumo">
+                        <div class="border-bottom col-12 titulo">
+                            <h1 class="mt-2 ml-2">Resumo</h1>
+                        </div>
+                        <div class="text-dark">
+                            <p class="mt-2 ml-2 col-12">O presente relato inscreve-se no campo da análise e impacto de processo formativo situado no contexto de atuação de professores 
+                            do AEE para alunos regularmente matriculado na rede municipal de ensino de Sorocaba, SP. A partir do estudo sobre a formação 
+                            inicia, repetindo tudo denovo.</p>
+                            <p class="mt-2 ml-2 col-12">
+                                O presente relato inscreve-se no campo da análise e impacto de processo formativo situado no contexto de atuação 
+                                de professores do AEE para alunos regularmente matriculado na rede municipal de ensino de Sorocaba, SP. A partir do 
+                                estudo sobre a formação inicia<strong class="text-warning" id="ver-mais">...ver mais</strong>
+                            </p>
+                            <p id="novo-paragrafo"></p>
+                            <p id="novo-paragrafo-2"></p>
+                        </div>
+                    </section>
+                    <section class="border rounded col-xl-11 col-lg-12 col-md-12 col-sm-12 mt-3 ml-xl-3 mt-5 p-0">
+                        <div class="border-bottom col-12 titulo">
+                            <h1 class="mt-2 ml-2">Discussões</h1>
+                        </div>
+                        <div>
+                            <h6 class="text-warning text-center mt-3" id="title-discussoes">
+                                Compartilhe suas ideias ou dúvidas com os autores!</h6>
+                        </div>
+                        <div class="col-12 text-center pt-4" id="discussoes-div">
+                            <div id="discussoes">
+                                <img src="./node_modules/bootstrap-icons/icons/flower1.svg" class="pr-5">
+                                <img src="./node_modules/bootstrap-icons/icons/patch-question-fll.svg" class="pl-5 pr-5">
+                                <img src="./node_modules/bootstrap-icons/icons/people-fill.svg" class="pl-5">
+                                <p class="pt-5">Sabia que o maior estímulo no desenvolvimento científico e cultural é a curiosidade? 
+                                Deixe seus questionamentos ou sugestões para o autor!</p>
+                            </div>
+                            <div id="button-up-down">
+                                <hr class="mt-5"><button class="btn btn-warning pl-2 text-capitalize" type="button" id="up-down">
+                                <img src="./node_modules/bootstrap-icons/icons/plus.svg">criar tópico</button>
+                            </div>
+                            <div id="campos"></div>
+                        </div>
+                        <div class="border rounded mx-3 mb-3 question">
+                            <h6 class="text-warning pl-3 pt-3">Assunto da pergunta aparece aqui</h6>
+                            <p class="text-capitalize pl-3 font-weight-bold">carlos henrique santos</p>
+                            <p class="pl-3">Comecinho da pergunta aparece aqui recente relato inscreve-se no 
+                               campo de análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo...</p>
+                            <div class="pl-2 pb-3">
+                                <img src="./node_modules/bootstrap-icons/icons/three-dots-vertical.svg">
+                                <img src="./node_modules/bootstrap-icons/icons/heart.svg" class="border-warning rounded px-3 py-1 bg-warning">
+                                <span class="pl-3">1 like</span>
+                                <span class="pl-3">1 resposta</span>
+                            </div>
+                        </div>
+                        <div class="border rounded mx-3 mb-3 question">
+                            <h6 class="text-warning pl-3 pt-3">Assunto da pergunta aparece aqui</h6>
+                            <p class="text-capitalize pl-3 font-weight-bold">carlos henrique santos</p>
+                            <p class="pl-3">Comecinho da pergunta aparece aqui recente relato inscreve-se no 
+                               campo de análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo...</p>
+                            <div class="pl-2 pb-3" id="comentarios">
+                                <img src="./node_modules/bootstrap-icons/icons/three-dots-vertical.svg">
+                                <img src="./node_modules/bootstrap-icons/icons/heart.svg" class="border-warning rounded px-3 py-1 bg-warning">
+                                <span class="pl-3" id="like">1 like</span>
+                                <span class="pl-3" id="resposta">1 resposta</span>
+                            </div>
+                        </div>
+                        <div id="comentario"></div>
+                    </section>
+                <!--Fim do main-->    
+                </main>
+            </div>
+            <div>
+                <!--Começo do rodapé-->
+                <footer class="float-right col-xl-10 col-lg-12 col-md-12 col-sm-12 pb-5 pt-4"><hr>
+                    <div class="row">
+                        <img src="./Imagens/logo-rodape.svg" class="col-3 w-100 mb-2">
+                        <p class="col-xl-9 d-inline">
+                            <strong>Preservar a memória da conferência e aumentar o alcance do conhecimento científico</strong> é a razão pela qual o Processo de Galoá foi criado.
+                            <br><br>Os trabalhos da conferência publicados aqui são de acesso aberto e nossa indexação mantém os trabalhos apresentado na conferência fácil de encontrar e citar.
+                        </p>
+                    </div>
+                    <button class="btn text-white col-xl-3" type="button" id="saiba-mais">Saiba mais</button>
+                <!--Fim do rodapé-->
+                </footer>
+            </div>
+        </div>
+        <script src="./index.js"></script> <!--Script para campos da página-->
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    </body>
+</html>

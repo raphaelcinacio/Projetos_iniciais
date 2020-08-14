@@ -1,0 +1,175 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+#header{
+    border: 1px solid black;
+    padding: 35px 150px 120px 0;
+    background-image: url(./img/fundo.png);
+}
+nav ul li{
+    padding-top: 15px;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    list-style-type: none;
+    float: right;
+    margin-right: 15px;
+}
+#logo{
+    margin-left: 40px;
+    box-shadow: 5px 5px 12px black;
+    padding: 15px;
+}
+header nav ul li a{
+    text-transform: uppercase;
+}
+header nav ul li a:hover{
+    color: rgb(139, 166, 248);
+    border-bottom: 1px solid rgb(182, 182, 182);
+    text-decoration: none;
+}
+#principal{
+    margin-left: 130px;
+    margin-right: 130px;
+}
+
+#conteudo{
+    margin-top: 40px;
+    width: 400px;
+    float: left;
+}
+aside{
+    width: 200px;
+    float: right;
+    margin-top: 40px;
+}
+#login{
+    margin-top: 10px;
+    background-color: #ffc857;
+    background-image: linear-gradient(116deg, #ffc857 0%, #3e2f5b 74%);
+    width: 350px;
+    height: 230px;
+    text-align: center;
+}
+fieldset{
+    border: none;
+}
+legend{
+    display: none;
+}
+#login input{
+    width: 245px;
+}
+label{
+    display: block;
+    margin-top: 3px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+}
+h3{
+    margin: 0;
+    padding-top: 12px;
+    text-transform: uppercase;
+    font-weight: 100;
+}
+.btn{
+    height: 35px;
+    width: 245px;
+}
+#title{
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(14, 11, 11);
+}
+#qtd{
+    margin-bottom: 5px;
+}
+section#galeria{
+    margin-top: 10px;
+    background-color: #ffc857;
+    background-image: linear-gradient(116deg, #ffc857 0%, #3e2f5b 74%);
+    width: 350px;
+    height: 340px;
+    padding: 15px 30px;
+    text-align: center;
+}
+#title-galeria{
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(14, 11, 11);
+}
+section#galeria a.imagens{
+    margin: 5px 10px;
+    display: block;
+    background: url(./img/fundo-foto.png);
+    background-repeat: no-repeat;
+    float: left;
+    padding: 18px 15px 18px 15px;
+}
+article{
+    width: 320px;
+    margin-left: 15px;
+}
+article h4{
+    color: rgb(4, 87, 4);
+    font-size: 16px;
+} 
+#link-artigo a{
+    color: rgb(8, 67, 245);
+    text-transform: uppercase;
+    text-decoration: none;
+}
+#link-artigo a:hover{
+    color: rgb(139, 166, 248);
+    border-bottom: 1px solid rgb(182, 182, 182);
+}
+#video{
+    margin-top: 15px;
+}   
+#map{
+    position: absolute;
+    margin-left: 375px;
+    margin-top: -205px;
+}
+#artigos{
+    margin-top: 25px;
+}
+#informacao{
+    position: absolute;
+    margin-left: 375px;
+    margin-top: -285px;
+    color: rgb(32, 32, 32);
+    font-weight: 500;
+}
+#rodape{
+    margin-top: 100px;
+    padding: 800px 0 20px 0;
+    text-align: center;    
+    
+}
+#rodape footer ul li{
+    list-style-type: none;
+    display: inline;
+    margin-left: 15px;
+    text-align: center;
+}
+#rodape footer ul li a{
+    text-decoration: none;
+}
+#rodape footer ul li a:hover{
+    color: rgb(139, 166, 248);
+    border-bottom: 1px solid rgb(182, 182, 182);
+}
+footer img{
+    border-top: .1px solid rgb(192, 190, 190);
+    width: 100%;
+}
+#informacao a{
+    text-decoration: none;
+}
+#informacao a:hover{
+    color: rgb(139, 166, 248);
+    border-bottom: 1px solid rgb(182, 182, 182);
+}
