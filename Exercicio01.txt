@@ -1,0 +1,115 @@
+#include <stdio.h>
+#include <locale.h>
+#include <iostream>
+#include<stdlib.h>
+
+int main()
+{
+	int menu;
+	int bilheteria[14][39];
+  int fileira;
+	int poltrona;
+	int f1 = 0;
+	int f2 = 0;
+	int f3 = 0;
+	int assentosOcupados = 0;
+	setlocale(LC_ALL,"");
+  for (int l = 0; l < 15; l++) {
+			    for (int c = 0; c < 40; c++){
+			    	bilheteria[l][c] = 46;
+				}
+			} 
+	do{
+		printf("----------------------------------------\n");
+		printf("\nMENU:");
+		printf("\n0. Finalizar");
+		printf("\n1. Reservar poltrona");
+		printf("\n2. Mapa de ocupação");
+		printf("\n3. Faturamento");
+		printf("\nEscolha a opção: ");
+		scanf("%d", &menu);
+		printf("\n----------------------------------------");
+    
+		if(menu == 1){
+			printf("\nDigite a fileira(1 à 15): \n");
+			scanf("%d", &fileira);
+			printf("\nDigite a poltrona(1 à 40): \n");
+			scanf("%d", &poltrona);
+	   	   	if(bilheteria[fileira-1][poltrona-1] == 35){
+					    printf("Lugar já está ocupado\n");
+				}
+				else{
+					bilheteria[fileira-1][poltrona-1] = 35;
+					printf("\nLugar reservado com sucesso\n");
+				}
+				if(fileira == 1 || fileira < 6){
+					f1++;
+				}
+				else if(fileira == 6 || fileira < 11){
+					f2++;
+				}
+				else if(fileira == 11 || fileira < 16){
+					f3++;
+				}
+				assentosOcupados++;   
+		}
+		else if(menu == 2){
+			printf("\n '.' representa lugar vago\n");
+			printf(" '#' representa lugar ocupado\n\n");
+			for (int l = 0; l < 15; l++) {
+			    for (int c = 0; c < 40; c++){
+    				printf("%c ", bilheteria[l][c]);
+				}
+			}
+		}
+		else if(menu == 3){
+			float valorBilheteria = f1 * 50 + f2 * 30 + f3 * 15;
+			printf("\nQtde de lugares ocupados: ");
+			printf("%d ", assentosOcupados);
+			printf("\nValor da bilheteria: ");
+			printf("%.2f\n", valorBilheteria);	
+		}    
+    fileira = 0;
+    poltrona = 0;
+	}
+	while(menu != 0);
+	return 0;
+}
+
+
+//Exercício 2:
+
+#include <stdio.h>
+#include <iostream>
+#include<stdlib.h>
+#include <ctime>
+#include <string>
+
+int main(){
+  
+  std::string naipe[4] = {"Espadas", "Copas", "Ouros", "Paus"};
+   
+  srand(time(NULL));
+  int cartas[10][3];
+
+  
+
+  for(int a = 0; a < 4; a++){
+    for(int b = 0; b < 12; b++){
+      cartas[a][b] = rand() % 13 + 1;
+      
+    }
+  }
+  for (int l = 0; l < 4; l++) {
+    printf("%iº jogador\n", l+1);
+			    for (int c = 0; c < 12; c++){
+    				printf("\n%i - ", cartas[l][c]);
+            int a = rand() % 4;
+            std::cout << naipe[a] + " - ";
+            printf("%i\n", rand() % 2 + 1);
+				}
+    printf("------------------------------\n");
+	}
+  return 0;
+}
+
